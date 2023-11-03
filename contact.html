@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -39,24 +40,57 @@
         <hr>
     </header>
 
+
     <main>
-        <div class="banner-wrapper">
-            <img src="images/banner.png" alt="cupcake image and illustrations" class="banner-img">
-            <div class="banner-content">
-                <h1>Frostreats</h1>
-                <h2 class="slogan">flavor for every mood</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste accusamus beatae error ad, quas nihil architecto quis animi repellat odio rem quam expedita fuga atque ex? Nemo, tempora ab.</p>
+        <h1>Contact us</h1>
 
-                <div class="shop-button"><a href="products.html" >Shop &#x25BA</a> </div>
+        <div class="contact-grid">
+            <img src="images/contact.png" alt="baker with cake illustration" class="contact-img">
+            <div>
                 
+                <form class="contact-form" action="contact.html" method="get">
+                    <h2>Write to us!</h2>
+
+                    <div class="forms">
+                    
+                        <div>
+                            <label for="yourname">Your Name</label>
+                            <input id="yourname" name="name" type="text" placeholder="Name" >
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="text" placeholder="Email">
+                        </div>
+
+                        <div>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message"></textarea>
+                        
+                        </div>
+                    
+
+                        <div>
+                            <button class="form-button" type="submit">Send</button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
-
         </div>
-
-        
-
     </main>
-    
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
         <hr>
         

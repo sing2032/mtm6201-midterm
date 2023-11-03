@@ -1,0 +1,199 @@
+main{
+    max-width: 100%;
+}
+
+.about{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-grid{
+    margin:5rem 0;
+    animation: slide-in 2s ease;
+}
+
+@keyframes slide-in{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(1);
+        opacity: 1;
+    }
+}
+
+h1{
+    font-size:4rem;
+    text-align: left;
+}
+
+h3{
+    font-size:2rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.offers{
+    margin:1rem 0;
+}
+
+h1 + p{
+    text-align: left;
+    max-width: 700px;
+}
+
+.about-info{
+    margin:2rem 0;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 800;
+    margin:1rem 0;
+    text-transform: capitalize;
+}
+
+h2 + p{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+table{
+    display: inline-block;
+    text-align: left;
+    margin: 2rem;
+    
+}
+
+
+table tr th{
+    
+    padding: .5rem 3rem .5rem 0;
+    font-weight: bold;
+}
+
+.owner-img{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.services-container{
+    margin:5rem 0;
+    text-align: center;
+}
+
+.vision-container{
+    display:block;
+    background: rgb(69, 10, 40) url(../images/vision.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+    padding:2rem 0;
+    margin:5rem 0;
+    transition:500ms ease-out ;
+}
+
+.vision-container:hover{
+    box-shadow: 0 0 30px 10px #96355d99;
+    transition: ease-in-out 500ms;
+}
+
+@keyframes scale-down{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+  }
+
+.offers:hover a img{
+    animation:  scale-down 0.4s ease-in-out both;
+}
+
+.contact-info{
+    margin:5rem 0;
+    text-align: center;
+}
+
+.top-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid #862948;
+    background-color:#862948 ;
+    border-radius: 10%;
+    padding: 0.3rem 0.5rem;
+}
+
+.top-button:hover{
+    background-color: transparent;
+    transition: background-color 1s;
+}
+
+.back-to-top{
+    color: aliceblue;
+
+}
+
+@media screen and (min-width:760px){
+
+    .about-info h2{
+        text-align: left;
+    }
+
+    .about-grid-info{
+        text-align: left;
+    }
+
+    h2 + p{
+        max-width: 700px;
+        text-align: left;
+    }
+
+    table{
+        display: block;
+        margin-left:0 ;
+    }
+
+    .about-grid{
+        display: grid;
+        grid-template-areas: "img info";
+        align-items: center;
+    }
+
+    .about-info{
+        grid-area: info;
+    }
+
+    .owner-img{
+        grid-area: img;
+    }
+
+
+    .vision{
+        display: grid;
+        grid-template-areas:"paragraph heading";
+        padding:3rem 0;
+        align-items: center;
+        
+    }
+
+    .vision h2{
+        grid-area:heading;
+        text-align: left;
+    }
+
+    .vision p{
+        grid-area:paragraph;
+        text-align: right;
+    }
+
+    .services{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+}
