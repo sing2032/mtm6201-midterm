@@ -1,6 +1,5 @@
-main{
-    text-align: left;
-}
+
+
 
 .product{
     margin:1rem;
@@ -9,12 +8,19 @@ main{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    
+    
 }
+
 
 .product:hover{
     box-shadow: 0 0 10px 5px #96355d99;
     transition: ease-in-out 500ms;
+    
 }
+
+
+
 
 .product img{
     width: 100%;
@@ -49,7 +55,9 @@ h1{
 }
 
 .product-info{
-    margin:2rem 1rem;
+    margin:2rem auto;
+    max-width: 1200px;
+
 }
 
 .product-info p{
@@ -60,9 +68,11 @@ h1{
 
 .products-grid{
     display: grid;
-    margin:1rem 0;
     animation: moveUp 2s ease;
+    margin: 0 auto;
+    max-width: 1200px;
 }
+
 
 @keyframes moveUp{
     0%{
@@ -80,11 +90,11 @@ h1{
     }
 
     .product{
-        margin: 0;
+        margin: 0 auto;
     }
 
     .product-info{
-        margin:2rem 0;
+        margin:2rem auto;
     }
     
 }

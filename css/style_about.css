@@ -28,11 +28,7 @@ h1{
     text-align: left;
 }
 
-h3{
-    font-size:2rem;
-    font-weight: 800;
-    text-transform: capitalize;
-}
+
 
 .offers{
     margin:1rem 0;
@@ -79,10 +75,7 @@ table tr th{
     width: 100%;
 }
 
-.services-container{
-    margin:5rem 0;
-    text-align: center;
-}
+
 
 .vision-container{
     display:block;
@@ -90,53 +83,24 @@ table tr th{
     background-repeat: no-repeat;
     background-position:center center;
     background-size:cover;
+    background-attachment: fixed;
     padding:2rem 0;
     margin:5rem 0;
-    transition:500ms ease-out ;
+ 
 }
 
-.vision-container:hover{
-    box-shadow: 0 0 30px 10px #96355d99;
-    transition: ease-in-out 500ms;
+
+.vision{
+    padding:3rem 0;
 }
 
-@keyframes scale-down{
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.8);
-    }
-  }
-
-.offers:hover a img{
-    animation:  scale-down 0.4s ease-in-out both;
-}
 
 .contact-info{
     margin:5rem 0;
     text-align: center;
 }
 
-.top-button {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    border: 1px solid #862948;
-    background-color:#862948 ;
-    border-radius: 10%;
-    padding: 0.3rem 0.5rem;
-}
 
-.top-button:hover{
-    background-color: transparent;
-    transition: background-color 1s;
-}
-
-.back-to-top{
-    color: aliceblue;
-
-}
 
 @media screen and (min-width:760px){
 
@@ -148,9 +112,9 @@ table tr th{
         text-align: left;
     }
 
-    h2 + p{
+    .contact-info p{
         max-width: 700px;
-        text-align: left;
+        
     }
 
     table{
@@ -176,7 +140,6 @@ table tr th{
     .vision{
         display: grid;
         grid-template-areas:"paragraph heading";
-        padding:3rem 0;
         align-items: center;
         
     }
@@ -191,9 +154,6 @@ table tr th{
         text-align: right;
     }
 
-    .services{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
+    
     
 }

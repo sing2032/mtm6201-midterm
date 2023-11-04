@@ -14,7 +14,7 @@ body{
     background-attachment: fixed;
     color: #fde8f1;
     background-color: #32081f;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     line-height: 1.4;
     
 
@@ -23,6 +23,7 @@ body{
     font-family: 'Jost', sans-serif;
 
 }
+
 
 /* nav styles */
 
@@ -153,14 +154,13 @@ input[type="search"]::-webkit-search-results-decoration{
 
 /* main styles */
 
-main{
-    max-width: 1200px;
-    margin: 0 auto;
-    /* text-align: center; */
-}
 
 .banner-wrapper{
     text-align: center;
+    max-width: 1200px;
+    margin: 1rem auto;
+    
+
 }
 
 h1{
@@ -230,6 +230,7 @@ h1{
 }
 
 
+
 /* @keyframes slide-in-right{
     0%{
         transform:translateX(-100px);
@@ -261,7 +262,103 @@ h1{
     animation: slide-in-left 2s ease;
 }  */
 
+.quote{
+    display:block;
+    background: rgb(69, 10, 40) url(../images/quote-bg.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:cover;
+    background-attachment: fixed;
+    padding:4rem 0;
+    margin:2rem auto;
+    transition:500ms ease-out ;
+    text-align: center;
+   
+    font-size: 1.3rem;
+}
 
+blockquote {
+    margin: 0 auto;
+    padding: 10px 60px 10px 70px;
+    position: relative;
+    max-width: 700px;
+}
+
+q {
+      
+    display: block;
+    padding: 1rem;
+    quotes: "“" "”";
+      
+    &::before {
+        content: open-quote;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 7rem;
+        font-weight: bold;
+        line-height: 7rem;
+        left: 0;
+        top: 0;
+        position: absolute;
+        
+      }
+      
+    &::after {
+        content: close-quote;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 7rem;
+        font-weight: bold;
+        line-height: 7rem;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+      
+      }
+    }
+
+  
+
+.services-container,.index-about h2{
+    font-size: 3rem;
+    font-weight: 800;
+    margin:1rem 0;
+    text-transform: capitalize;
+}
+
+h3{
+    font-size:1.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+
+.services-container{
+    margin:5rem 0;
+    text-align: center;
+}
+
+@keyframes scale-down{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+  }
+
+.offers:hover a img{
+    animation:  scale-down 0.4s ease-in-out both;
+}
+
+.index-about{
+    margin:0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.index-about p{
+    max-width: 700px;
+    margin: 0 auto;
+}
 
 /* footer styles */
 
@@ -305,6 +402,25 @@ h1{
     align-self: center;
 }
 
+.top-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid #862948;
+    background-color:#862948 ;
+    border-radius: 10%;
+    padding: 0.3rem 0.5rem;
+}
+
+.top-button:hover{
+    background-color: transparent;
+    transition: background-color 1s;
+}
+
+.back-to-top{
+    color: aliceblue;
+
+}
 
 /*------ Media query -----*/
 
@@ -359,12 +475,17 @@ h1{
    .banner-wrapper{
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    margin: 1.5rem 0 2rem 0;
+    
    }
 
    .banner-content{
     align-self: center;
    }
+
+   .services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
 
    
    
