@@ -45,7 +45,13 @@
         <h1>Contact us</h1>
 
         <div class="contact-grid">
-            <img src="images/contact.png" alt="baker with cake illustration" class="contact-img">
+
+            <picture>
+                <source srcset="images/contact-450_x_465.png" media="(max-width:760px)">
+                <source srcset="images/contact-550_x_568.png" media="(min-width:760px)">
+                <img src="images/contact.png" alt="baker with cake illustration" class="contact-img">
+            </picture>
+            
             <div>
                 
                 <form class="contact-form" action="contact.html" method="get">

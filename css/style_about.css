@@ -126,6 +126,7 @@ table tr th{
         display: grid;
         grid-template-areas: "img info";
         align-items: center;
+        gap:1rem;
     }
 
     .about-info{
