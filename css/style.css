@@ -181,7 +181,7 @@ h1{
     text-shadow: 1px 1px 10px #fc2f74;
     text-wrap: nowrap;
     padding:0 2rem;
-    animation: blink-1 1s ease-in;
+    animation: blink-1 1s 350ms ease-in;
 
 }
 
@@ -205,13 +205,13 @@ h1{
     padding: 0 2rem;
 }
 
-.shop-button{
+.primary-button{
     display: block;
     margin: 2rem 0;
     
 }
 
-.shop-button a{
+.primary-button a{
    
     background-color: #862948;
     border-radius: 25px;
@@ -222,7 +222,7 @@ h1{
     border: #862948 1px solid;
 }
 
-.shop-button a:hover{
+.primary-button a:hover{
     background-color: transparent;
     border: 1px solid #ae486f;
     transition: background-color border 0.5s ease;

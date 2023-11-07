@@ -15,14 +15,23 @@
     <header>
         <div class="wrapper">
             <nav>
-                <a href="index.html"><img src="images/logo.png" alt="frostreats logo" class="logo"></a>
+                <a href="index.html" aria-label="Opens homepage">
+
+                    <picture>
+                        <source srcset="images/logo-150_x_78.png" media="(max-width:760px)">
+                        <source srcset="images/logo-211_x_111.png" media="(min-width:760px)">
+                        <img src="images/logo.png" alt="frostreats logo" class="logo">
+                    </picture>
+
+                    
+                </a>
 
                 <div class="menu">
                     <ul class="menu-items">
-                        <li><a href="index.html" class="transition home">Home</a></li>
-                        <li><a href="products.html" class="transition products">Products</a></li>
-                        <li><a href="about.html" class="transition about">About</a></li>
-                        <li><a href="contact.html" class="transition contact">Contact</a></li>
+                        <li><a href="index.html" class="transition home" aria-label="Opens homepage">Home</a></li>
+                        <li><a href="products.html" class="transition products" aria-label="Opens products">Products</a></li>
+                        <li><a href="about.html" class="transition about" aria-label="Opens about">About</a></li>
+                        <li><a href="contact.html" class="transition contact" aria-label="Opens contact">Contact</a></li>
                     </ul>
 
                     <form class="search-bar">

@@ -15,14 +15,23 @@
     <header>
         <div class="wrapper">
             <nav>
-                <a href="index.html"><img src="images/logo.png" alt="frostreats logo" class="logo"></a>
+                <a href="index.html" aria-label="Opens homepage">
+
+                    <picture>
+                        <source srcset="images/logo-150_x_78.png" media="(max-width:760px)">
+                        <source srcset="images/logo-211_x_111.png" media="(min-width:760px)">
+                        <img src="images/logo.png" alt="frostreats logo" class="logo">
+                    </picture>
+
+                    
+                </a>
 
                 <div class="menu">
                     <ul class="menu-items">
-                        <li><a href="index.html" class="transition home">Home</a></li>
-                        <li><a href="products.html" class="transition products">Products</a></li>
-                        <li><a href="about.html" class="transition about">About</a></li>
-                        <li><a href="contact.html" class="transition contact">Contact</a></li>
+                        <li><a href="index.html" class="transition home" aria-label="Opens homepage">Home</a></li>
+                        <li><a href="products.html" class="transition products" aria-label="Opens products">Products</a></li>
+                        <li><a href="about.html" class="transition about" aria-label="Opens about">About</a></li>
+                        <li><a href="contact.html" class="transition contact" aria-label="Opens contact">Contact</a></li>
                     </ul>
 
                     <form class="search-bar">
@@ -53,26 +62,30 @@
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae saepe unde ut? Blanditiis itaque, quis voluptates laborum, fugit suscipit cumque explicabo doloremque a impedit natus deserunt dolorum esse tenetur impedit natus deserunt dolorum esse tenetur.</p>
                     <div class="owner-info">
-                        <table>
+                        <table itemscope itemtype="https://schema.org/Person">
                             <tr>
                                 <th>Name</th>
-                                <td>:Sarah Jones</td>
+                                <td itemprop="name">Sarah Jones</td>
                             </tr>
                             <tr>
-                                <th>Age</th>
-                                <td>:26</td>
+                                <th>Address</th>
+                                <td itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">123 Woodroffe Ave, </span>  
+                                    <span itemprop="addressLocality"> Ottawa,</span> 
+                                    <span itemprop="postalCode"> ON K2G 1V8</span>
+                                </td>
                             </tr>
                             <tr>
                                 <th>Email</th>
-                                <td>:frostreats@gmail.com</td>
-    
+                                <td itemprop="email">frostreats@gmail.com</td>
                             </tr>
+                            <tr>
                                 <th>Phone Number</th>
-                                <td>:613-123-4567</td>
+                                <td itemprop="telephone">613-123-4567</td>
                             </tr>
                         </table>
                     </div>
-                    <div class="shop-button"><a href="#" >Know More &#x25BA</a> </div>
+                    <div class="primary-button"><a href="#" aria-label="Know more about the owner">Know More &#x25BA</a> </div>
                 </div>
 
                 <picture class="owner-img">
@@ -99,14 +112,14 @@
         <div class="contact-info">
             <h2>Contact us!</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nobis aspernatur assumenda cupiditate porro. Impedit atque id praesentium officia ut repellendus molestiae accusantium aspernatur accusamus nostrum, quis temporibus consequuntur sunt?</p>
-            <div class="shop-button"><a href="contact.html" >Know More &#x25BA</a> </div>
+            <div class="primary-button"><a href="contact.html" aria-label="Opens contact">Know More &#x25BA</a> </div>
 
         </div>
 
     </main>
 
     <div class="top-button">
-        <a href="#"><span class="back-to-top material-icons-outlined">
+        <a href="#"><span class="back-to-top material-icons-outlined" aria-label="Back to top">
         expand_less
         </span></a>
     </div>
