@@ -11,7 +11,15 @@
     <title>Frostreats</title>
 </head>
 <body>
+    <!-- Header content includes skip links, logo, nav, and search input -->
     <header>
+        <ul id="skip-links">
+            <li><a href="#main-banner" aria-label="Skips to main banner">Skip to main banner</a></li>
+            <li><a href="#quote" aria-label="Skips to quote by owner">Skip to quote by owner</a></li>
+            <li><a href="#services" aria-label="Skips to the products offered">Skip to products</a></li>
+            <li><a href="#index-about" aria-label="Skips to the about section">Skip to about section</a></li>
+        </ul>
+        
         <div class="wrapper">
             <nav>
                 <a href="index.html" aria-label="Opens homepage">
@@ -48,8 +56,9 @@
         <hr>
     </header>
 
+    <!-- Main content includes the banner, quote by owner, products offered, and a short about section -->
     <main>
-        <div class="banner-wrapper">
+        <div id="main-banner" class="banner-wrapper">
 
             <picture>
                 <source srcset="images/banner-350_x_274.png" media="(max-width:760px)">
@@ -63,13 +72,13 @@
                 <h2 class="slogan">flavor for every mood</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iste accusamus beatae error ad, quas nihil architecto quis animi repellat odio rem quam expedita fuga atque ex? Nemo, tempora ab.</p>
 
-                <div class="primary-button"><a href="products.html" aria-label="Shop for products">Shop &#x25BA</a> </div>
+                <div class="primary-button"><a href="products.html" aria-label="Shop for products">Shop &#x25BA;</a> </div>
                 
             </div>
 
         </div>
 
-        <div class="quote">
+        <div id="quote" class="quote">
             <blockquote>
                 <q>Every ingredient has its own story, and it's my job as a baker to weave them together into something extraordinary.</q>
                 <cite>- Sarah Jones</cite>
@@ -78,7 +87,7 @@
 
 
 
-        <div class="services-container">
+        <div id="services" class="services-container">
             <h2>Products we offer</h2>
             <div class="services">
                 
@@ -145,10 +154,10 @@
             </div>
         </div>
 
-        <div class="index-about">
+        <div id="index-about" class="index-about">
             <h2>Know more about us!</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nobis aspernatur assumenda cupiditate porro. Impedit atque id praesentium officia ut repellendus molestiae accusantium aspernatur accusamus nostrum, quis temporibus consequuntur sunt?</p>
-            <div class="primary-button"><a href="about.html" aria-label="Opens about page">Know More &#x25BA</a> </div>
+            <div class="primary-button"><a href="about.html" aria-label="Opens about page">Know More &#x25BA;</a> </div>
 
         </div>
 
@@ -156,12 +165,15 @@
 
     </main>
 
+    <!-- Back to top button -->
     <div class="top-button">
         <a href="#"><span class="back-to-top material-icons-outlined" aria-label="back to top">
         expand_less
         </span></a>
     </div>
     
+
+    <!-- Footer includes social media links and copyright info -->
     <footer>
         <hr>
         

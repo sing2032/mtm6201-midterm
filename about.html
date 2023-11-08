@@ -12,7 +12,13 @@
     <title>Frostreats</title>
 </head>
 <body>
+    <!-- Header content includes skip links, logo, nav, and search input -->
     <header>
+        <ul id="skip-links">
+            <li><a href="#about" aria-label="Skips to about">Skip to about</a></li>
+            <li><a href="#vision" aria-label="Skips to vision">Skip to vision</a></li>
+            <li><a href="#contact" aria-label="Skips to contact">Skip to contact</a></li>
+        </ul>
         <div class="wrapper">
             <nav>
                 <a href="index.html" aria-label="Opens homepage">
@@ -49,8 +55,9 @@
         <hr>
     </header>
 
+    <!-- The main contains about information that includes schema, vision statement, and a contact section -->
     <main>
-        <div class="about">
+        <div class="about" id="about">
             <div class="about-info">
                 <h1>About</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ad inventore laboriosam ex asperiores eos incidunt voluptatem, animi voluptatum deleniti commodi suscipit harum voluptas qui. Animi aliquam quas ratione soluta.</p>
@@ -62,6 +69,7 @@
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae saepe unde ut? Blanditiis itaque, quis voluptates laborum, fugit suscipit cumque explicabo doloremque a impedit natus deserunt dolorum esse tenetur impedit natus deserunt dolorum esse tenetur.</p>
                     <div class="owner-info">
+                        <!-- the table contains schema information for the person -->
                         <table itemscope itemtype="https://schema.org/Person">
                             <tr>
                                 <th>Name</th>
@@ -85,7 +93,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="primary-button"><a href="#" aria-label="Know more about the owner">Know More &#x25BA</a> </div>
+                    <div class="primary-button"><a href="#" aria-label="Know more about the owner">Know More &#x25BA;</a> </div>
                 </div>
 
                 <picture class="owner-img">
@@ -97,11 +105,8 @@
             </div>
         </div>
         
-            
 
-        </div>
-
-        <div class="vision-container">
+        <div class="vision-container" id="vision">
             <div class="vision">
                 <h2>Vision</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eligendi tempora harum molestiae doloremque ullam totam error quibusdam recusandae iste. Quaerat neque vel recusandae eos aspernatur inventore nemo commodi dolores!</p>
@@ -109,10 +114,10 @@
         </div>
 
 
-        <div class="contact-info">
+        <div class="contact-info" id="contact">
             <h2>Contact us!</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nobis aspernatur assumenda cupiditate porro. Impedit atque id praesentium officia ut repellendus molestiae accusantium aspernatur accusamus nostrum, quis temporibus consequuntur sunt?</p>
-            <div class="primary-button"><a href="contact.html" aria-label="Opens contact">Know More &#x25BA</a> </div>
+            <div class="primary-button"><a href="contact.html" aria-label="Opens contact">Know More &#x25BA;</a> </div>
 
         </div>
 
@@ -124,6 +129,7 @@
         </span></a>
     </div>
 
+     <!-- Footer includes social media links and copyright info -->
     <footer>
         <hr>
         
@@ -159,6 +165,7 @@
             
 
             <p class="copyright">&copy; 2023 Frostreats</p>
+            <!-- All images are from freepik -->
         
         </div>
 
